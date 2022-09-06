@@ -5,4 +5,4 @@
 	int num2 = 2;
 %>
 <h2>더하기</h2>
-<%= num1 %> + <%= num2 %> = <%= num1 + num2 %> <!-- expression : 자바 변수를 사용할때 -->
+<%= num1 %> + <%= num2 %> = <%= num1 + num2 %> <!-- expression : 자바 데이터를 사용할때 -->
