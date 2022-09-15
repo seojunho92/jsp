@@ -15,14 +15,15 @@
 위 폼 아래에, 에러메세지를 출력한다.
  -->
 <%
-	if(session.getAttribute("id") == null) {
+	Object userId = session.getAttribute("userId");
+	if(userId == null) {
 %>
-		<a href='login.jsp'>login</a>
+		<a href='login.jsp'>로그인</a>
 <%		
 	} else {
 %>
-		<%=session.getAttribute("id") %>님, 환영합니다.
-		<a href='logout.jsp'>logout</a>
+		<%= userId %>님, 환영합니다. &nbsp;
+		<a href='logout.jsp'>로그아웃</a>
 <%
 	}
 %>
